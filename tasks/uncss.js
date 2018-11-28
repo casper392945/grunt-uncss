@@ -50,16 +50,16 @@ module.exports = function (grunt) {
                     }
                     done();
                 });
-            } catch (err) {
-                const error = new Error('Uncss failed.');
+            } catch (error) {
+                const err = new Error('Uncss failed.');
 
-                if (err.msg) {
-                    error.message += `, ${err.msg}.`;
+                if (error.msg) {
+                    err.message += `, ${error.msg}.`;
                 }
 
-                error.origError = err;
+                err.origError = error;
                 grunt.log.warn(`Uncssing source "${src}" failed.`);
-                grunt.fail.warn(error);
+                grunt.fail.warn(err);
             }
         });
     });

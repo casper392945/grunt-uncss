@@ -36,18 +36,18 @@
     "uncss": "^0.16.2"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "grunt": "^1.0.3",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-processhtml": "^0.4.1",
     "grunt-simple-mocha": "^0.4.1",
     "load-grunt-tasks": "^4.0.0",
-    "time-grunt": "^1.4.0",
-    "xo": "^0.22.0"
+    "time-grunt": "^2.0.0",
+    "xo": "^0.23.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
@@ -67,7 +67,6 @@
         "error",
         "always"
       ],
-      "prefer-destructuring": "off",
       "unicorn/filename-case": "off"
     },
     "overrides": [
